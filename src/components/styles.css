@@ -1,0 +1,21 @@
+.pai {
+  margin: 0.4vw;
+  cursor: pointer;
+}
+
+.pai:hover {
+  filter: brightness(50%);
+  transform: rotateZ(-30deg);
+}
+
+.pai:nth-child(1) {
+  color: red;
+}
+
+.pai:nth-child(2) {
+  color: green;
+}
+
+.pai:nth-child(3) {
+  color: blue;
+}

@@ -1,22 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+import CenteredCard from "./components/CenteredCard";
+const desulpas = ["Sinto muito", "Mas estou", "Sem criatividade"]; //testando o uso de array
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CenteredCard children={desulpas[0]} />
+        <CenteredCard children={desulpas[1]} />
+        <CenteredCard children={desulpas[2]} />
       </header>
     </div>
   );
